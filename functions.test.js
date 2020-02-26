@@ -32,4 +32,10 @@ test('Should be under 2000', () => {
 // regex
 test('Should be no I in team', () => {
 	expect('team').not.toMatch(/I/);
+});
+
+// Arrays
+test('admin should be in usernames', () => {
+	usernames = ['Peter', 'Stephen', 'admin', 'Meg'];
+	expect(usernames).toContain('admin');
 })
